@@ -3,6 +3,7 @@
 import { useState, useCallback } from 'react'
 import { createSeller, handleAPIError } from '@/lib/api'
 import type { CreateSellerPayload } from '@/lib/api'
+import type { Seller } from '@/types'
 
 export function useSeller() {
   const [loading, setLoading] = useState(false)
@@ -16,7 +17,7 @@ export function useSeller() {
     setSuccess(false)
 
     try {
-      const result = await createSeller(payload)
+      const result = await createSeller(payload) as { data: Seller }
       setSellerId(result.data.id)
       setSuccess(true)
       return result.data

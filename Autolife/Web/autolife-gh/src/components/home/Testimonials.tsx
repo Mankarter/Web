@@ -57,7 +57,7 @@ export default function Testimonials() {
 
             {/* Quote */}
             <p className="text-lg md:text-xl text-gray-700 mb-6 italic">
-              "{current.content}"
+              &quot;{current.content}&quot;
             </p>
 
             {/* Author */}

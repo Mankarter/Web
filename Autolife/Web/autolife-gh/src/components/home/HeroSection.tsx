@@ -12,7 +12,7 @@ export default function HeroSection() {
               Find Your Next Car at AutoLifeGh
             </h1>
             <p className="text-lg text-blue-100 mb-8 leading-relaxed">
-              Browse quality vehicles from trusted sellers across Ghana. Whether you're looking for a luxury SUV, family car, pickup, or hybrid, AutoLifeGh makes car buying simple and secure.
+              Browse quality vehicles from trusted sellers across Ghana. Whether you&apos;re looking for a luxury SUV, family car, pickup, or hybrid, AutoLifeGh makes car buying simple and secure.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/vehicles" className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center justify-center gap-2">

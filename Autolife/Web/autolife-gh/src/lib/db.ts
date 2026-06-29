@@ -167,7 +167,15 @@ export async function getLatestVehicles(limit: number = 8) {
  */
 
 // Create new inquiry
-export async function createInquiry(inquiry: Omit<Inquiry, 'id' | 'createdAt'>) {
+export async function createInquiry(inquiry: {
+  vehicle_id: string
+  buyer_name: string
+  buyer_email: string
+  buyer_phone?: string
+  seller_id: string
+  message?: string
+  status: 'new' | 'responded' | 'closed'
+}) {
   const { data, error } = await supabase
     .from('inquiries')
     .insert([inquiry])

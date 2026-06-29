@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
       phone: body.phone,
       whatsapp: body.whatsapp,
       location: body.location,
-      verification_status: 'unverified',
+      verificationStatus: 'unverified',
       rating: 0,
     })
 

@@ -1,5 +1,3 @@
-import { CldUploadWidget, CldImage } from 'next-cloudinary'
-
 export const cloudinaryCloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME
 
 if (!cloudinaryCloudName) {
